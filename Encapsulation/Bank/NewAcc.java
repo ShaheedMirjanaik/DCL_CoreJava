@@ -10,7 +10,12 @@ public class NewAcc {
     }
 
     public void setAccNO(int accNo){
-        this.accNo = accNo;
+        if(accNo > 0){
+            this.accNo = accNo;
+        }
+        else{
+            System.out.println("Invalid Account number.");
+        }
     }
 
     public String getName(){
@@ -18,6 +23,7 @@ public class NewAcc {
     }
 
     public void setName(String name){
+        
         this.name = name;
     }
 
